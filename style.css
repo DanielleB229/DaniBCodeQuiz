@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+body{ background-color: yellow;}
+
+.beginquizbtn {
+    object-position: absolute;
+    top: 50px;
+    left: 50px;
+   
+
+}
+
+.hide {
+    visibility: hidden;
+}

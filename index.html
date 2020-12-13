@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> BeyHive Initiation Quiz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <header>
+        <div class="clock">
+            <div class="timer"> Time Remaining</div>
+            <div id="time-remaining">44</div>
+            <title>BeyHive Initiation Quiz</title>
+        </div>
+    </header>
+
+    <div id="home-container" class="home-container">
+        <div class="beginquizbtn"> <button id="begin-button"> Begin Quiz Now</button></div>
+
+        <div class="Acknowledgment">
+            <span> Before You Begin Please Read The Following </span>
+        </div>
+        <div class="Quiz Rules">
+            <div class="Quiz Rules">1. The timer starts when you click "Begin Quiz Now".</div>
+            <div class="Quiz Rules">2. If you answer incorrectly, the timer will subtract 4 seconds from the clock.
+            </div>
+            <div class="Quiz Rules">3. When all questions are answered or the timer reaches 0 the quiz is over.</div>
+            <div class="Quiz Rules">4. When the quiz is over you must enter your initials and save your score.</div>
+        </div>
+    </div>
+
+    <div id= "quiz-container" class="quiz-container hide">
+        <div id="quiz" class="">
+
+            <div id="question"></div>
+            <span> </span>
+        </div>
+        <div id="answers" class="button-grid">
+            <button id="answer1button" class="btn"></button>
+            <button id="answer2button" class="btn"></button>
+            <button id="answer3button" class="btn"></button>
+            <button id="answer4button" class="btn"></button>
+        </div>
+    </div>
+
+
+    <div id= "score-container" class="score-container hide">
+        <span> Your Score Is <span id="score-span"></span></span>
+        <div class="container">
+            <div class= "row">
+                <label> Your Initials</label>
+                <input type= "text" id= "textfrominput"/>
+                <button id="submitButton">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id= "high-score-container" class="high-score hide">
+        <span id="high-score-span">Top Scores</span>
+        <div>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
